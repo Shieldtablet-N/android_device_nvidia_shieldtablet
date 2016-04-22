@@ -36,7 +36,8 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 # Kernel
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-TARGET_KERNEL_SOURCE := kernel/nvidia/shield
+BOARD_CUSTOM_BOOTIMG_MK := device/nvidia/shieldtablet/mkbootimg.mk
+TARGET_KERNEL_SOURCE := kernel/nvidia/shieldtablet
 TARGET_KERNEL_CONFIG := cyanogenmod_shieldtablet_defconfig
 BOARD_KERNEL_CMDLINE := androidboot.hardware=tn8
 
