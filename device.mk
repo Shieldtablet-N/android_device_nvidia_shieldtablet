@@ -121,6 +121,9 @@ PRODUCT_PACKAGES += power.tegra
 # Browser
 PRODUCT_PACKAGES += Gello
 
+# Compatibility
+PRODUCT_PACKAGES += libshim_icu55
+
 # Wireless Controller
 #$(call inherit-product-if-exists, vendor/nvidia/shield_common/blake-blobs.mk)
 
